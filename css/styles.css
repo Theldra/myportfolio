@@ -1,10 +1,14 @@
+*reset{
+    text-decoration: none;
+}
+
 nav{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     height: 70px;
     align-items: center;
-    background-color: bisque;
+    background-color: grey;
     position: fixed;
     right: 0;
     left: 0;
@@ -14,9 +18,46 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 70%;
+    width: 70%; 
+}
+
+.text-logo{
+    font-family: Georgia;
+    font-style: italic;
+}
+
+.text-cream{
+    color: #f5f5f5;
+    font-family: Georgia;
+    font-style: italic;
+    font-size: larger;
+}
+.hero-info{
+    font-family: Georgia;
+    font-style: italic;
+    }
+ 
+img{
+    display: flex;
+    flex-direction: row;
+    border-radius: 50%;
 }
 
 .hero{
-    background-image: url();
+    height: 100vh;
+    background-color: #f5f5f5;
+    background-size: contain; 
 }
+
+.hero-image{
+    /* display: flex;
+    flex-direction: row; */
+    justify-content: right;
+}
+
+.hero-info{
+    /* display: flex;
+    flex-direction: row; */
+    text-align: left;
+}
+
