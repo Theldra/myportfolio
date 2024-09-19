@@ -1,5 +1,7 @@
-*reset{
-    text-decoration: none;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 nav{
@@ -24,8 +26,13 @@ nav{
 .text-logo{
     font-family: Georgia;
     font-style: italic;
+    color: #f5f5f5;
 }
 
+.text-cream{
+    color: #f5f5f5;
+    text-decoration: none;
+}
 
 .hero{
     height: 100vh;
@@ -36,40 +43,73 @@ nav{
    background-image: url(../images/minenew.png);
    background-size: cover;
    background-repeat: no-repeat;
-
-    
+ 
 }
 
 .space{
     width: 50%;
 }
 
-.hero-info{
+/* .hero-info{
     
-}
+} */
 
-.about-moi{
+.abt{
     /* height: 100vh; */
     background-color: #808080;
-    
+    padding: 50px;
 }
 
-.about-moi h1{
-    text-align: center;
+
+.about-moi{
+    display: flex;
+    justify-content: space-around;
+
+    /* flex-direction: row; */
 }
+
+.abt h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
 
 .about-moi img{
-    display: flex;
-    flex-direction: row;
-    border: 1px solid #ddd;
-    padding: 30px;
-   
-
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* border: 1px; */
+    /* padding: 30px; */
 }
 
-.describe h1{
+.describe {
+    /* display: flex; */
+    /* flex-direction: row;
+    text-align: right; */
+width: 500px;
+}
+
+.describe h2 {
+    margin-bottom: 30px;
+}
+
+.serv{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.serv-items{
     display: flex;
     flex-direction: row;
-    text-align: right;
+    justify-content: space-between;
+    margin-left: 70px;
+    margin-right: 70px;
+    gap: 25px;
+}
 
+.services-header{
+    padding-bottom: 20px;
+}
+.srv{
+    width: 500px;
 }
