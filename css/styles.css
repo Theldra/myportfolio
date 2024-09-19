@@ -16,6 +16,30 @@ nav{
     left: 0;
 }
 
+.welcome-note {
+    font-size: 28px;
+    color: #808080;
+    margin-top: 100px;
+}
+.my-name {
+    font-size: 48px;
+    margin-top: 30px;
+}
+
+.full-name {
+    font-size: 66px;
+}
+
+.summary {
+    color: #808080;
+    font-size: 40px;
+}
+
+.btn {
+    padding: 16px;
+    margin-top: 30px;
+}
+
 .nav-items{
     display: flex;
     flex-direction: row;
