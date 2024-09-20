@@ -153,15 +153,15 @@ nav{
     align-items: center;
 }
 .img-1{
-    width: 420px;
+    width:480px;
 }
 
 .img-2{
-    width: 250px;
+    width: 300px;
 }
 
 .img-3{
-    width: 400px;
+    width: 430px;
 }
 
 .portfolio{
@@ -177,8 +177,9 @@ nav{
 .main-contact{
     display: flex;
     justify-content: space-evenly;
-    margin-left: 50px;
+    margin-left: 10px;
     margin-right: 50px;
+    width: 100%;
     
 }
 .contact{
@@ -191,20 +192,19 @@ nav{
     color: #808080;
 }
 .cont-form{
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
+    width: 80%;
 }
 .cont-form [type=text-1] {
-    /* width: 100%; */
-    padding: 50px 58px;
+    width: 100%;
+    padding: 20px 10px 60px 10px;
     margin: 8px 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
-.user{
-    grid-area: user;
-}
-.mail{
-    grid-area: mail;
+.contact-info{
+    width: 20%;
+    padding: 5px;
 }
 .foot{
     text-align: center;
@@ -222,4 +222,12 @@ nav{
     display: flex;
     justify-content: space-around;
     padding-top: 80px;
+}
+.user{
+    padding: 10px 25px 25px 5px;
+    justify-content: space-evenly;
+}
+.sub{
+    width: 70%;
+    padding: 5px 22px 15px 2px;
 }
