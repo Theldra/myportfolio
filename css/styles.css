@@ -95,8 +95,12 @@ nav{
 
 
 .about-moi{
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        
 }
 
 .abt h1{
@@ -109,9 +113,11 @@ nav{
     /* width: 500px; */
     color: #f5f5f5;
     margin-left: 30px;
-    padding: 70px;
+    padding: 20px;
     background-color:#868686;
     border-radius: 30px;
+    margin-bottom: 20px;
+    
 }
 
 .about-text {
