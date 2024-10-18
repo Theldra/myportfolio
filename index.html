@@ -14,7 +14,7 @@
 <body>
     <nav class="flex justify-around items-center h-16 fixed bg-gray-500">
         <!-- Nav bar starts here -->
-        <h1 class="text-logo text-white font-bold text-5xl" style="font-family: 'Oleo Script', cursive;" >E.A</h1>
+        <h1 class="text-logo text-white font-bold text-5xl" style="font-family: 'Oleo Script', cursive;">E.A</h1>
         <div class="nav-items hidden md:flex space-x-4 text-white justify-evenly italic w-2/5">
             <a class="#" href="#home">Home</a>
             <a class="#" href="#about">About</a>
@@ -41,7 +41,7 @@
         </nav>
     </div>
 
-        <!-- Hero Section -->
+    <!-- Hero Section -->
     <section class="hero h-screen flex items-center bg-cover bg-no-repeat">
         <div class="space w-14"></div>
         <div class="hero-info text-justify ml-auto mr-24">
@@ -50,7 +50,9 @@
             <h1 class="full-name text-6xl">Etheldra Akahoho</h1>
             <h1 class="summary text-4xl text-gray-500">A Web Developer</h1>
             <div>
-                <button class="btn p-4 mt-7 rounded-3xl border-none text-white font-serif bg-gray-500"><a href="./assets/docs/Etheldra C.V -.docx" class="download-btn" download="My-C.V-docx">VIEW MY CV</a></button>
+                <button class="btn p-4 mt-7 rounded-3xl border-none text-white font-serif bg-gray-500"><a
+                        href="./assets/docs/Etheldra C.V -.docx" class="download-btn" download="My-C.V-docx">VIEW MY
+                        CV</a></button>
             </div>
         </div>
         <!-- Hero section ends here -->
@@ -60,61 +62,71 @@
     <!-- About me starts here -->
     <section class="abt bg-gray-500 pb-12">
         <h1 class="text-center mb-7 font-bold text-2xl">ABOUT ME</h1>
-        <div class="about-moi grid">
-            <div class="describe bg-gray-200 ">
-                <h2>Junior Web Developer</h2>
-                <p class="about-text text-xl">I'm a creative web designer who loves turning ideas into beautiful, functional websites. I'm constantly learning new
+        <div class="about-moi p-5 space-y-5 space-x-5">
+            <!-- <div class="describe bg-red-100 text-center p-5">
+                <h2 class="text-xl font-medium">Junior Web Developer</h2>
+                <p>I'm a creative web designer who loves turning ideas into beautiful, functional websites. I'm constantly learning new technologies and techniques to ensure my work is always top-notch.
+                </p>
+            </div> -->
+            <div class="describe p-5 bg-red-100 text-center">
+                <h2 class="text-xl font-medium">Junior Web Developer</h2>
+                <p>I'm a creative web designer who loves turning ideas into beautiful, functional websites. I'm constantly learning new
                 technologies and techniques to ensure my work is always top-notch.
-                
                 </p>
             </div>
-            <div class="describe p-5 mb-5 ml-7 text-center">
-                <h2>Problem Solver</h2>
-                <p class="about-text">I'm a problem solver at heart, always striving to find innovative solutions that meet my clients' needs and exceed their
-                expectations.
+            <div class="describe p-5 bg-red-100 text-center">
+                <h2 class="text-xl font-medium">Problem Solver</h2>
+                <p>I'm a problem solver at heart, always striving to find innovative solutions that
+                    meet my clients' needs and exceed their
+                    expectations.
                 </p>
             </div>
-            <div class="describe p-5 mb-5 ml-7 text-center">
-                <h2 class="">Team Player</h2>
-                <p class="about-text">I believe in the power of collaboration and enjoy working with clients and colleagues to achieve common goals.
+            <div class="describe p-5 bg-red-100 text-center">
+                <h2 class="text-xl font-medium">Team Player</h2>
+                <p>I believe in the power of collaboration and enjoy working with clients and
+                    colleagues to achieve common goals.
                 </p>
             </div>
-            <div class="describe p-5 mb-5 ml-7 text-center">
-                <h2>Dedicated to Excellence</h2>
-                <p class="about-text">I'm committed to delivering high-quality work and exceeding expectations. My goal is to create websites that make a
-                positive impact and leave a lasting impression.
+            <div class="describe p-5 bg-red-100 text-center">
+                <h2 class="text-xl font-medium">Dedicated to Excellence</h2>
+                <p>I'm committed to delivering high-quality work and exceeding expectations. My goal
+                    is to create websites that make a
+                    positive impact and leave a lasting impression.
                 </p>
             </div>
         </div>
     </section>
     <!-- About me ends here -->
     <!-- Services starts here -->
-    <section class="services ">
+    <section class="">
         <h1 class="serv text-gray-500">MY SKILLS</h1>
-            <div class="srv text-gray-500 text-center p-7">
-                <ul class="  space-x-4">
-                    <li class="flex items-center space-x">
-                        <i class="fa fa-html5 text-red-500"></i>
-                        <span>HTML 5</span>
-                    </li>
-                    <li class="flex items-center space-x-2">
-                        <i class="fa -brands fa-css3 text-blue-500"></i>
-                        <span>CSS</span>
-                    </li>
-                    <li class="flex items-center space-x-2">
-                        <i class="fa -brands fa-js text-yellow-500"></i>
-                        <span>JAVASCRIPT</span>
-                    </li>
-                    <li class="flex items-center space-x-2">
-                        <i class="fa fa-tailwindcss text-blue-400"></i>
-                        <span>TAILWIND CSS</span>
-                    </li>
-                    <li class="flex items-center space-x-2">
-                        <i class="fa-brands fa-react text-blue-600"></i>
-                        <span>REACT</span>
-                    </li>
-                </ul>
+
+        <div class="flex justify-center flex-wrap">
+            <div>
+                <img src="./assets/images/html.png" class="w-24" alt="html-logo">
+                <span>HTML5</span>
             </div>
+            <div>
+                <img src="./assets/images/css.png" class="w-24" alt="css-logo">
+                <span>CSS</span>
+            </div>
+            <div>
+                <img src="./assets/images/js.png" class="w-24" alt="js-logo">
+                <span>JAVASCRIPT</span>
+            </div>
+            <div>
+                <img src="./assets/images/tailwind.png" class="w-24" alt="tailwind-log">
+                <span>TAILWIND CSS</span>
+            </div>
+            <div>
+                <img src="./assets/images/react.png" class="w-24" alt="react-logo">
+                <span>REACT</span>
+            </div>
+            <div>
+                <img src="./assets/images/office.png" class="w-24" alt="office-logo">
+                <span>MS Office Suit</span>
+            </div>
+        </div>
     </section>
     <!-- Portfolio begins -->
     <!-- <section class="portfolio">
@@ -138,17 +150,18 @@
         <div class="main-contact flex ml-48">
             <div>
                 <form action="your-form-handler" method="POST" class="space-y-4 mt-4">
-                    <input type="text" name="name" placeholder="Your Name" class="border rounded-md p-2 w-full max-w-xs text-lg "
-                        required>
-                    <input type="email" name="email" placeholder="Your Email" class="border rounded-md p-2 w-full max-w-xs text-lg flex"
-                        required>
-                    <textarea name="message" placeholder="Your Message" class="border rounded-md p-2 w-full max-w-xs flex text-lg"
-                        required></textarea>
-                    <button type="submit" class="btn border-none p-3 text-gray-500 bg-white mt-7 rounded-md font-serif text-lg">Send
+                    <input type="text" name="name" placeholder="Your Name"
+                        class="border rounded-md p-2 w-full max-w-xs text-lg " required>
+                    <input type="email" name="email" placeholder="Your Email"
+                        class="border rounded-md p-2 w-full max-w-xs text-lg flex" required>
+                    <textarea name="message" placeholder="Your Message"
+                        class="border rounded-md p-2 w-full max-w-xs flex text-lg" required></textarea>
+                    <button type="submit"
+                        class="btn border-none p-3 text-gray-500 bg-white mt-7 rounded-md font-serif text-lg">Send
                         Message</button>
                 </form>
             </div>
-            
+
             <div class="">
                 <div class="flex">
                     <span class="fa fa-envelope text-white"></span>
@@ -156,7 +169,7 @@
                 </div>
                 <div class="flex">
                     <span class="fa fa-phone text-white"></span>
-                    <p  class="text-white">0558320400/0262021004</p>
+                    <p class="text-white">0558320400/0262021004</p>
                 </div>
                 <div class="flex">
                     <span class="fa fa-linkedin text-white"></span>
@@ -173,7 +186,7 @@
         <h2 class="font-bold p-4">Hire Me</h2>
         <button class="btn bg-gray-500 text-white rounded-md p-3">Let's Discuss Your Project</button>
         <div class="below mt-4 text-gray-500 pt-24">
-            <p>Copyright ©2024 All rights reserved | This template is made with ❤️ by Ethy</p>
+            <p>Copyright &copy; 2024 All rights reserved | Made with ❤️ by Ethy</p>
         </div>
     </footer>
 </body>
