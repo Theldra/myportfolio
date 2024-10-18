@@ -5,33 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <nav>
+    <nav class="flex justify-around items-center h-16 fixed bg-gray-500">
         <!-- Nav bar starts here -->
-        <h1 class="text-logo style={{ fontFamily: 'Kaushan Script, cursive' }}" >E.A</h1>
-        <div class="nav-items">
-            <a class="text-cream" href="#">Home</a>
-            <a class="text-cream" href="#">About</a>
-            <a class="text-cream" href="#">Services</a>
-            <a class="text-cream" href="#">Portfolio</a>
-            <a class="text-cream" href="#">Contact</a>
+        <h1 class="text-logo text-white font-bold text-5xl" style="font-family: 'Oleo Script', cursive;" >E.A</h1>
+        <div class="nav-items hidden md:flex space-x-4 text-white justify-evenly italic w-2/5">
+            <a class="#" href="#home">Home</a>
+            <a class="#" href="#about">About</a>
+            <a class="#" href="#services">Services</a>
+            <a class="#" href="#portfolio">Portfolio</a>
+            <a class="#" href="#contact">Contact</a>
         </div>
+        <button id="toggle-button" class="md:hidden text-white focus:outline-none">
+            <i class="fa fa-bars"></i>
+        </button>
     </nav>
-    <section class="hero">
 
-        <div class="space"></div>
-        <div class="hero-info">
-            <p class="welcome-note">Hi There,</p>
-            <h1 class="my-name">I'm</h1>
-            <h1 class="full-name">Etheldra Akahoho</h1>
-            <h1 class="summary">A Web Developer</h1>
+    <!-- Side Navbar -->
+    <div id="side-navbar" class="fixed inset-0 bg-gray-800 bg-opacity-75 hidden">
+        <div class="flex justify-end p-4">
+            <button id="close-button" class="text-white">✖</button>
+        </div>
+        <nav class="flex flex-col items-center">
+            <a href="#home" class="text-white py-2">Home</a>
+            <a href="#about" class="text-white py-2">About</a>
+            <a href="#services" class="text-white py-2">Services</a>
+            <a href="#portfolio" class="text-white py-2">Portfolio</a>
+            <a href="#contact" class="text-white py-2">Contact</a>
+        </nav>
+    </div>
+
+        <!-- Hero Section -->
+    <section class="hero h-screen flex items-center bg-cover bg-no-repeat">
+        <div class="space w-14"></div>
+        <div class="hero-info text-justify ml-auto mr-24">
+            <p class="welcome-note text-3xl mt-24 text-gray-500">Hi There,</p>
+            <h1 class="my-name text-5xl mt-7">I'm</h1>
+            <h1 class="full-name text-6xl">Etheldra Akahoho</h1>
+            <h1 class="summary text-4xl text-gray-500">A Web Developer</h1>
             <div>
-                <button class="btn">VIEW PORTFOLIO</button>
+                <button class="btn p-4 mt-7 rounded-3xl border-none text-white font-serif bg-gray-500"><a href="./assets/docs/Etheldra C.V -.docx" class="download-btn" download="My-C.V-docx">VIEW MY CV</a></button>
             </div>
         </div>
         <!-- Hero section ends here -->
@@ -39,28 +58,28 @@
     <!-- hero section starts here -->
 
     <!-- About me starts here -->
-    <section class="abt">
-        <h1>ABOUT ME</h1>
-        <div class="about-moi">
-            <div class="describe">
+    <section class="abt bg-gray-500 pb-12">
+        <h1 class="text-center mb-7 font-bold text-2xl">ABOUT ME</h1>
+        <div class="about-moi grid">
+            <div class="describe bg-gray-200 ">
                 <h2>Junior Web Developer</h2>
-                <p class="about-text">I'm a creative web designer who loves turning ideas into beautiful, functional websites. I'm constantly learning new
+                <p class="about-text text-xl">I'm a creative web designer who loves turning ideas into beautiful, functional websites. I'm constantly learning new
                 technologies and techniques to ensure my work is always top-notch.
                 
                 </p>
             </div>
-            <div class="describe">
+            <div class="describe p-5 mb-5 ml-7 text-center">
                 <h2>Problem Solver</h2>
                 <p class="about-text">I'm a problem solver at heart, always striving to find innovative solutions that meet my clients' needs and exceed their
                 expectations.
                 </p>
             </div>
-            <div class="describe">
-                <h2>Team Player</h2>
+            <div class="describe p-5 mb-5 ml-7 text-center">
+                <h2 class="">Team Player</h2>
                 <p class="about-text">I believe in the power of collaboration and enjoy working with clients and colleagues to achieve common goals.
                 </p>
             </div>
-            <div class="describe">
+            <div class="describe p-5 mb-5 ml-7 text-center">
                 <h2>Dedicated to Excellence</h2>
                 <p class="about-text">I'm committed to delivering high-quality work and exceeding expectations. My goal is to create websites that make a
                 positive impact and leave a lasting impression.
@@ -70,20 +89,35 @@
     </section>
     <!-- About me ends here -->
     <!-- Services starts here -->
-    <section class="services">
-        <h1 class="serv">MY SKILLS</h1>
-            <div class="srv">
-                <ul>
-                <li><a href="#">HTML 5</a></li>
-                <li><a href="#">CSS</a></li>
-                <li><a href="#">JAVASCRIPT</a></li>
-                <li><a href="#">TAILWIND CSS</a></li>
-                <li><a href="#">REACT</a></li>    
+    <section class="services ">
+        <h1 class="serv text-gray-500">MY SKILLS</h1>
+            <div class="srv text-gray-500 text-center p-7">
+                <ul class="  space-x-4">
+                    <li class="flex items-center space-x">
+                        <i class="fa fa-html5 text-red-500"></i>
+                        <span>HTML 5</span>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                        <i class="fa -brands fa-css3 text-blue-500"></i>
+                        <span>CSS</span>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                        <i class="fa -brands fa-js text-yellow-500"></i>
+                        <span>JAVASCRIPT</span>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                        <i class="fa fa-tailwindcss text-blue-400"></i>
+                        <span>TAILWIND CSS</span>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                        <i class="fa-brands fa-react text-blue-600"></i>
+                        <span>REACT</span>
+                    </li>
                 </ul>
             </div>
     </section>
     <!-- Portfolio begins -->
-    <section class="portfolio">
+    <!-- <section class="portfolio">
         <h1>PORTFOLIO</h1>
         <div class="pimages">
             <div>
@@ -97,43 +131,49 @@
             </div>
         </div>
 
-    </section>
+    </section> -->
     <!-- Contact here -->
-    <section class="contact">
-        <h1>Get in Touch</h1>
-        <div class="main-contact">
+    <section class="contact bg-gray-500 pb-12">
+        <h1 class="text-white text-center font-bold text-2xl mb-12 pt-16">Get in Touch</h1>
+        <div class="main-contact flex ml-48">
             <div>
-            <span class="fa fa-envelope"></span>
-                <p>etheldeak4@gmail.com</p>
-            </div>
-            <div>
-                <span class="fa fa-phone"></span>
-                <p>0558320400/0262021004</p>
-            </div>
-            <div>
-                <span class="fa fa-linkedin"></span>
-                <p>linkedin.com/in/etheldra-akahoho</p>
-            </div>
-            <div>
-                <span class="fa fa-github"></span>
-                <p>github.com/theldra</p>
+                <form action="your-form-handler" method="POST" class="space-y-4 mt-4">
+                    <input type="text" name="name" placeholder="Your Name" class="border rounded-md p-2 w-full max-w-xs text-lg "
+                        required>
+                    <input type="email" name="email" placeholder="Your Email" class="border rounded-md p-2 w-full max-w-xs text-lg flex"
+                        required>
+                    <textarea name="message" placeholder="Your Message" class="border rounded-md p-2 w-full max-w-xs flex text-lg"
+                        required></textarea>
+                    <button type="submit" class="btn border-none p-3 text-gray-500 bg-white mt-7 rounded-md font-serif text-lg">Send
+                        Message</button>
+                </form>
             </div>
             
+            <div class="">
+                <div class="flex">
+                    <span class="fa fa-envelope text-white"></span>
+                    <p class="text-white">etheldeak4@gmail.com</p>
+                </div>
+                <div class="flex">
+                    <span class="fa fa-phone text-white"></span>
+                    <p  class="text-white">0558320400/0262021004</p>
+                </div>
+                <div class="flex">
+                    <span class="fa fa-linkedin text-white"></span>
+                    <p class="text-white">linkedin.com/in/etheldra-akahoho</p>
+                </div>
+                <div class="flex">
+                    <span class="fa fa-github text-white"></span>
+                    <p class="text-white">github.com/theldra</p>
+                </div>
             </div>
         </div>
     </section>
-    <footer class="foot">
-        <div>
-            <h2>Hire Me</h2>
-            <div>
-                <button>Let's Discuss Your Project</button>
-            </div>
-        </div>
-        <div class="below">
-            <div>
-                <p>Copyright ©2024 All rights reserved | This template is made by Ethy</p>
-            </div>
-            
+    <footer class="foot py-10 bg-white text-gray-500 text-lg text-center p-16">
+        <h2 class="font-bold p-4">Hire Me</h2>
+        <button class="btn bg-gray-500 text-white rounded-md p-3">Let's Discuss Your Project</button>
+        <div class="below mt-4 text-gray-500 pt-24">
+            <p>Copyright ©2024 All rights reserved | This template is made with ❤️ by Ethy</p>
         </div>
     </footer>
 </body>
