@@ -29,20 +29,11 @@ nav {
     border-radius: 30px;
 }
 
-
-
-.serv {
-    text-align: center;
-    margin-bottom: 50px;
-    /* color: #808080; */
-}
-
 .services-header {
     padding-bottom: 20px;
     /* color: #808080; */
 }
-
-
+ 
 .pimages {
     display: flex;
     justify-content: space-around;
@@ -73,14 +64,10 @@ nav {
 }
 
 .main-contact div {
-    /* display: flex; */
-    /* justify-content: justify; */
-    /* align-items: center; */
     width: 100%;
     padding: 15px;
     color: #444343;
-    /* padding-left: 200px; */
-}
+    
 .fa {
     margin-right: 20px;
 }
